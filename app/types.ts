@@ -1,7 +1,7 @@
-import { FC, memo, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 
-type RootLayoutPropsType = PropsWithChildren<{}>
-export type RootLayoutType = FC<RootLayoutPropsType>
+type RootLayoutPropsType = PropsWithChildren<{}>;
+export type RootLayoutType = FC<RootLayoutPropsType>;
 
-type MainPagePropsType = {}
-export type MainPageType = FC<MainPagePropsType>
+type MainPagePropsType = {};
+export type MainPageType = FC<MainPagePropsType>;
