@@ -1,5 +1,6 @@
-const Index = () => {
-    return <h1>Главная страница</h1>;
-};
+import React from "react";
+import IndexComponent from "../components/Index/IndexComponent";
 
-export default Index;
+export default function Index() {
+    return <IndexComponent />;
+}
