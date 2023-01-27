@@ -1,10 +1,13 @@
 import { memo } from "react";
 
-import AboutComponent from "../../components/About/AboutComponent";
 import { AboutUsPageType } from "./types";
 
 const AboutUsPage: AboutUsPageType = () => {
-  return <AboutComponent />;
+  return (
+    <>
+      <h1>О нас</h1>
+    </>
+  );
 };
 
 export default memo(AboutUsPage);
