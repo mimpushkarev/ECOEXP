@@ -1,9 +1,10 @@
 import { memo } from "react";
 
+import MainPageComponent from "../components/MainPage/MainPageComponent";
 import { MainPageType } from "./types";
 
 const MainPage: MainPageType = () => {
-  return <h1>Главная</h1>;
+  return <MainPageComponent />;
 };
 
 export default memo(MainPage);
