@@ -1,6 +1,6 @@
-import { memo } from "react";
+import {memo} from "react";
 
-import { AboutUsPageType } from "./types";
+import {AboutUsPageType} from "./types";
 
 const AboutUsPage: AboutUsPageType = () => {
   return (

@@ -1,7 +1,5 @@
 const MainHead = () => {
-    return (
-        <title>Главная</title>
-    )
-}
+  return <title>Главная</title>;
+};
 
-export default MainHead
+export default MainHead;

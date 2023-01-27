@@ -1,7 +1,5 @@
 const AboutUsHead = () => {
-    return (
-        <title>О нас</title>
-    )
-}
+  return <title>О нас</title>;
+};
 
-export default AboutUsHead
+export default AboutUsHead;

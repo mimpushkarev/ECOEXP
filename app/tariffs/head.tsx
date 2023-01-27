@@ -1,7 +1,5 @@
 const TariffsHead = () => {
-    return (
-        <title>Тарифы</title>
-    )
-}
+  return <title>Тарифы</title>;
+};
 
-export default TariffsHead
+export default TariffsHead;

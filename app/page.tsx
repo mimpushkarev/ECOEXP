@@ -1,6 +1,6 @@
-import { memo } from "react";
+import {memo} from "react";
 
-import { MainPageType } from "./types";
+import {MainPageType} from "./types";
 
 const MainPage: MainPageType = () => {
   return (
