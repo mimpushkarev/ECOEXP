@@ -2,7 +2,7 @@ import {memo} from "react";
 
 import styles from "./MainSection.module.scss";
 
-const MainPageComponent = () => {
+const MainSection = () => {
   return (
     <div>
       <div className={styles.image}>
@@ -28,4 +28,4 @@ const MainPageComponent = () => {
   );
 };
 
-export default memo(MainPageComponent);
+export default memo(MainSection);
