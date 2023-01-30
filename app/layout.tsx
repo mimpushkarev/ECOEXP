@@ -1,6 +1,7 @@
 import {memo} from "react";
 
 import NavigationComponent from "@components/NavBar";
+import "@assets/styles/globalLayout.scss";
 
 import {RootLayoutType} from "./types";
 

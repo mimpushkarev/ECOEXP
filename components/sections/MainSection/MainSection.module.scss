@@ -1,0 +1,22 @@
+@import "@assets/styles/global.scss";
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../assets/pictures/HomeFerns.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: $color-white;
+}
+
+.title {
+  padding-bottom: 5px;
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+.paragraph {
+  margin-top: 0.5rem;
+}
