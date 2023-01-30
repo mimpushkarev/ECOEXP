@@ -8,6 +8,9 @@ const MainPage: MainPageType = () => {
     <>
       <MainSection />
     </>
+    // <>
+    //   <h1>Главная</h1>
+    // </>
   );
 };
 
