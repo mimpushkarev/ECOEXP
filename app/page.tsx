@@ -11,6 +11,9 @@ const MainPage: MainPageType = () => {
       <MainSection />
       <ContactSection />
     </>
+    // <>
+    //   <h1>Главная</h1>
+    // </>
   );
 };
 
