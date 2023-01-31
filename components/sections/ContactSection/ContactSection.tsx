@@ -1,6 +1,7 @@
 import {memo} from "react";
 
 import ContactsCard from "@components/ContactsCard";
+
 import styles from "./ContactSection.module.scss";
 
 const ContactSection = () => {
