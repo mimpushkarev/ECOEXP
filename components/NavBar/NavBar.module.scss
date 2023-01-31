@@ -5,9 +5,12 @@
   height: 10%;
   padding: 2% 3% 3%;
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .link {
+  text-align: right;
   text-decoration: none;
   color: $color-black;
   padding: 0 2% 0;
