@@ -1,0 +1,64 @@
+@import "@assets/styles/global.scss";
+
+.contactgroup {
+  display: flex;
+  height: 20.5rem;
+  color: $color-white;
+}
+
+.fristContact {
+  width: 44rem;
+  min-width: 50%;
+}
+
+.secondContact {
+  flex: 1;
+  min-width: 0;
+  width: 18rem;
+  text-transform: uppercase;
+}
+
+.thirdContact {
+  flex: 1;
+  min-width: 0;
+  text-transform: uppercase;
+  width: 18rem;
+}
+
+.paragraph {
+  padding: 1rem 0 4rem 0;
+}
+
+.firstNumber {
+  padding: 4.5rem 22.5rem 4.5rem 6.25rem;
+}
+
+.lastNumbers {
+  padding: 4.5rem 12.5rem 4.5rem 1.25rem;
+}
+
+.contactItem {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-width: 20%;
+  flex: 1;
+  &:nth-child(1) {
+    background-color: $color-basic-3;
+  }
+  &:nth-child(2) {
+    background-color: $color-basic-2;
+  }
+  &:nth-child(3) {
+    background-color: $color-basic-1;
+  }
+  & > div {
+    padding-left: 1.25rem;
+  }
+  &_active {
+    min-width: 50%;
+    & > div {
+      padding-left: 6.25rem;
+    }
+  }
+}

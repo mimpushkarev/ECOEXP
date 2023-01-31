@@ -1,51 +1,5 @@
 @import "@assets/styles/global.scss";
 
-.frame {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 5rem 0 5rem;
-  gap: 3.75rem;
-}
-
-.contactgroup {
-  display: flex;
-  height: 20.5rem;
-  width: max-content;
-  color: $color-white;
-}
-
-.fristContact {
-  background-color: $color-basic-3;
-  width: 44rem;
-  min-width: 50%;
-}
-
-.secondContact {
-  flex: 1;
-  min-width: 0;
-  width: 18rem;
-  text-transform: uppercase;
-
-  background-color: $color-basic-2;
-}
-
-.thirdContact {
-  flex: 1;
-  min-width: 0;
-  text-transform: uppercase;
-  width: 18rem;
-  background-color: $color-basic-1;
-}
-
 .paragraph {
   padding: 1rem 0 4rem 0;
-}
-
-.firstNumber {
-  padding: 4.5rem 22.5rem 4.5rem 6.25rem;
-}
-
-.lastNumbers {
-  padding: 4.5rem 12.5rem 4.5rem 1.25rem;
 }
