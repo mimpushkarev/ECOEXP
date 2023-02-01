@@ -15,7 +15,7 @@ const Footer = () => {
             <a className={["LXSText", styles.footerLink].join(" ")}>О нас</a>
           </Link>
           <Link href="/tariffs" passHref legacyBehavior>
-            <a className={[styles.footerLink].join(" ")}>Тарифы</a>
+            <a className={["LXSText", styles.footerLink].join(" ")}>Тарифы</a>
           </Link>
         </div>
         <Link href="https://t.me/maximmartyr" passHref legacyBehavior>
