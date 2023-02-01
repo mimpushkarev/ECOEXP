@@ -3,7 +3,7 @@
 .navbar {
   background: rgba(0, 0, 0, 0);
   height: 10%;
-  padding: 2% 3% 3%;
+  padding: 2% 3% 0 3%;
   text-align: right;
   display: flex;
   justify-content: flex-end;
@@ -22,6 +22,6 @@
 }
 
 .link:hover {
-  border-bottom: 1px solid $color-dark-green;
+  border-bottom: 1px solid $color-basic-1;
   /* При наведении делаем подчеркивание прозрачным */
 }

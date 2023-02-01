@@ -5,19 +5,21 @@ import styles from "./NavBar.module.scss";
 
 const NavBar = () => {
   return (
-    <div className={styles.navbar}>
-      <Link className={styles.link} href="/">
-        Главная
-      </Link>
-      <Link className={styles.link} href="/about-us">
-        О нас
-      </Link>
-      <Link className={styles.link} href="/contacts">
-        Контакты
-      </Link>
-      <Link className={styles.link} href="/tariffs">
-        Тарифы
-      </Link>
+    <div className="container">
+      <div className={styles.navbar}>
+        <Link className={styles.link} href="/">
+          Главная
+        </Link>
+        <Link className={styles.link} href="/about-us">
+          О нас
+        </Link>
+        <Link className={styles.link} href="/contacts">
+          Контакты
+        </Link>
+        <Link className={styles.link} href="/tariffs">
+          Тарифы
+        </Link>
+      </div>
     </div>
   );
 };

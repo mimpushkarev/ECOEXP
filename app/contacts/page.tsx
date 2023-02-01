@@ -1,11 +1,13 @@
 import {memo} from "react";
 
+import ContactSection from "@components/sections/ContactSection/ContactSection";
+
 import {ContactsPageType} from "./types";
 
 const ContactsPage: ContactsPageType = () => {
   return (
     <>
-      <h1>Контакты</h1>
+      <ContactSection />
     </>
   );
 };
