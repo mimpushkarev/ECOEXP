@@ -2,6 +2,7 @@ import {memo} from "react";
 
 import NavigationComponent from "@components/NavBar";
 import Footer from "@components/Footer/Footer";
+
 import "@assets/styles/globalLayout.scss";
 
 import {RootLayoutType} from "./types";

@@ -6,35 +6,8 @@
   color: $color-white;
 }
 
-.fristContact {
-  width: 44rem;
-  min-width: 50%;
-}
-
-.secondContact {
-  flex: 1;
-  min-width: 0;
-  width: 18rem;
-  text-transform: uppercase;
-}
-
-.thirdContact {
-  flex: 1;
-  min-width: 0;
-  text-transform: uppercase;
-  width: 18rem;
-}
-
 .paragraph {
   padding: 1rem 0 4rem 0;
-}
-
-.firstNumber {
-  padding: 4.5rem 22.5rem 4.5rem 6.25rem;
-}
-
-.lastNumbers {
-  padding: 4.5rem 12.5rem 4.5rem 1.25rem;
 }
 
 .contactItem {
