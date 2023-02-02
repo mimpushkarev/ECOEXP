@@ -1,27 +1,33 @@
 @import "@assets/styles/global.scss";
 
 .navbar {
-  background: rgba(0, 0, 0, 0);
-  height: 10%;
-  padding: 2% 3% 0 3%;
-  text-align: right;
+  padding: 1rem 0;
+  border-bottom: 1px solid $color-basic-3;
+  background: $color-white;
+  position: fixed;
+  width: 100%;
+}
+
+.navbarWrapper {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .link {
-  text-align: right;
   text-decoration: none;
   color: $color-black;
-  padding: 0 2% 0;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.link:hover {
-  border-bottom: 1px solid $color-basic-1;
-  /* При наведении делаем подчеркивание прозрачным */
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+  &:hover {
+    border-bottom: 2px solid $color-black;
+  }
 }
