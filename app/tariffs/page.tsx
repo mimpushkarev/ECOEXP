@@ -1,11 +1,12 @@
 import {memo} from "react";
 
+import TariffsTable from "@components/TariffsTable";
 import {TariffsPageType} from "./types";
 
 const TariffsPage: TariffsPageType = () => {
   return (
     <>
-      <h1>Тарифы</h1>
+      <TariffsTable />
     </>
   );
 };

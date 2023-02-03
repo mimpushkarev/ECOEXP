@@ -1,0 +1,41 @@
+@import "@assets/styles/global.scss";
+
+.table {
+  table-layout: fixed;
+  position: relative;
+
+  td:not(:first-child) {
+    vertical-align: middle;
+    text-align: center;
+  }
+  tr {
+    border-bottom: 2px solid $color-basic-2;
+  }
+  td,
+  th {
+    padding: 0.5rem;
+    &:nth-child(2) {
+      border-left: 2px solid $color-basic-2;
+    }
+    &:nth-child(3) {
+      border-left: 2px solid $color-basic-2;
+    }
+  }
+  th {
+    text-align: center;
+  }
+}
+
+.column {
+  overflow: hidden;
+  &:nth-child(1) {
+    width: 28rem;
+    text-align: center;
+  }
+  &:nth-child(2) {
+    width: 16rem;
+  }
+  &:nth-child(3) {
+    width: 13rem;
+  }
+}
