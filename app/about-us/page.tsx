@@ -1,11 +1,12 @@
 import {memo} from "react";
 
+import AboutUsSection from "@components/sections/AboutUsSection";
 import {AboutUsPageType} from "./types";
 
 const AboutUsPage: AboutUsPageType = () => {
   return (
     <>
-      <h1>О нас</h1>
+      <AboutUsSection />
     </>
   );
 };

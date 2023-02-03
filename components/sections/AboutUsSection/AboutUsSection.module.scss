@@ -1,0 +1,38 @@
+@import "@assets/styles/global.scss";
+
+.box {
+  display: flex;
+}
+
+.heading {
+  width: 22rem;
+}
+.parPadding {
+  padding-bottom: 2rem;
+}
+.prBlock {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0 3.5rem 5.25rem;
+
+  div {
+    &:nth-child(1) {
+      color: $color-gray-2;
+    }
+    &:nth-child(2) {
+      margin: 0 2.25rem 0 3.75rem;
+    }
+    &:nth-child(3) {
+      color: $color-gray-2;
+    }
+  }
+  div:no(:first-child) {
+    flex: 1;
+  }
+  div :first-of-type {
+    &:nth-child(1) {
+      color: $color-black;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
