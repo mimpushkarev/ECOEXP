@@ -4,8 +4,20 @@
   padding: 1rem 0;
   border-bottom: 1px solid $color-basic-3;
   background: $color-white;
+  width: 100%;
+}
+
+.navbarMainSection {
+  padding: 1rem 0;
+  background: inherit;
   position: fixed;
   width: 100%;
+  a {
+    color: $color-white;
+    &:hover {
+      border-bottom: 2px solid $color-white;
+    }
+  }
 }
 
 .navbarWrapper {
@@ -22,8 +34,8 @@
 
 .link {
   text-decoration: none;
-  color: $color-black;
   padding: 0.5rem 1rem;
+  color: $color-black;
   margin: 0.5rem 1rem;
   border-bottom: 2px solid transparent;
   transition: 0.2s;

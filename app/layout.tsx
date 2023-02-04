@@ -1,6 +1,6 @@
 import {memo} from "react";
 
-import NavigationComponent from "@components/NavBar";
+import NavBar from "@components/NavBar";
 import Footer from "@components/Footer/Footer";
 
 import "@assets/styles/globalLayout.scss";
@@ -11,7 +11,7 @@ const RootLayout: RootLayoutType = ({children}) => {
   return (
     <html lang="en">
       <body>
-        <NavigationComponent />
+        <NavBar />
         {children}
         <Footer />
       </body>
