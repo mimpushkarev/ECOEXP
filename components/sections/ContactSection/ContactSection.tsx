@@ -6,17 +6,19 @@ import styles from "./ContactSection.module.scss";
 
 const ContactSection = () => {
   return (
-    <div className="section">
+    <section className="section">
       <div className="container">
-        <h2 className="H2">Вы всегда можете со мной связаться.</h2>
-        <div className={styles.paragraph}>
-          <p className="XLText">
-            Сделайте это в удобном для вас варианте из предложенных.
-          </p>
+        <div className={styles.box}>
+          <h2 className="H2">Вы всегда можете со мной связаться.</h2>
+          <div className={styles.paragraph}>
+            <p className="XLText">
+              Сделайте это в удобном для вас варианте из предложенных.
+            </p>
+          </div>
+          <ContactsCard />
         </div>
-        <ContactsCard />
       </div>
-    </div>
+    </section>
   );
 };
 

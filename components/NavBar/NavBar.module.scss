@@ -4,8 +4,36 @@
   padding: 1rem 0;
   border-bottom: 1px solid $color-basic-3;
   background: $color-white;
-  position: fixed;
   width: 100%;
+  transition: 0.3s linear;
+  position: fixed;
+  z-index: 100;
+
+  a {
+    color: $color-black;
+  }
+
+  &_isOnTop {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+
+    a {
+      color: $color-white;
+      &:hover {
+        border-bottom: 2px solid $color-white;
+      }
+    }
+  }
+}
+
+.navbarMainSection {
+  padding: 1rem 0;
+  background: inherit;
+  width: 100%;
+
+  &_isOnTop {
+    transform: translateY(-7rem);
+  }
 }
 
 .navbarWrapper {
@@ -22,8 +50,8 @@
 
 .link {
   text-decoration: none;
-  color: $color-black;
   padding: 0.5rem 1rem;
+  color: $color-black;
   margin: 0.5rem 1rem;
   border-bottom: 2px solid transparent;
   transition: 0.2s;
