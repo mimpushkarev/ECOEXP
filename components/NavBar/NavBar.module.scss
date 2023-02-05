@@ -5,18 +5,34 @@
   border-bottom: 1px solid $color-basic-3;
   background: $color-white;
   width: 100%;
+  transition: 0.3s linear;
+  position: fixed;
+  z-index: 100;
+
+  a {
+    color: $color-black;
+  }
+
+  &_isOnTop {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+
+    a {
+      color: $color-white;
+      &:hover {
+        border-bottom: 2px solid $color-white;
+      }
+    }
+  }
 }
 
 .navbarMainSection {
   padding: 1rem 0;
   background: inherit;
-  position: fixed;
   width: 100%;
-  a {
-    color: $color-white;
-    &:hover {
-      border-bottom: 2px solid $color-white;
-    }
+
+  &_isOnTop {
+    transform: translateY(-7rem);
   }
 }
 

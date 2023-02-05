@@ -4,7 +4,7 @@ import styles from "./TariffsTable.module.scss";
 
 const TariffsTable = () => {
   return (
-    <div className="section">
+    <section className="section">
       <div className="container">
         <div className={["H4", styles.table].join(" ")}>
           <table width="100%" cellPadding={0} cellSpacing={0}>
@@ -198,7 +198,7 @@ const TariffsTable = () => {
           </table>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

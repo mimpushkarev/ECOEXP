@@ -6,7 +6,7 @@ import styles from "./ContactSection.module.scss";
 
 const ContactSection = () => {
   return (
-    <div className="section">
+    <section className="section">
       <div className="container">
         <div className={styles.box}>
           <h2 className="H2">Вы всегда можете со мной связаться.</h2>
@@ -18,7 +18,7 @@ const ContactSection = () => {
           <ContactsCard />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -127,6 +127,13 @@ table {
 
 body {
   font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.heightWrapper {
+  flex: 1;
 }
 
 .H1 {

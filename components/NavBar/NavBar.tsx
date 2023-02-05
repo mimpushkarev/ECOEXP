@@ -1,5 +1,5 @@
 "use client";
-import {memo} from "react";
+import {memo, useEffect, useRef, useState} from "react";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 
@@ -7,8 +7,32 @@ import styles from "./NavBar.module.scss";
 
 const NavBar = () => {
   const router = usePathname();
+
+  const [isOnTop, setOnTopStatus] = useState(router === "/");
+  const headerRef = useRef();
+
+  useEffect(() => {
+    const setScrollStatus = () => {
+      setOnTopStatus(window.pageYOffset < 200);
+    };
+    if (router === "/") {
+      window.addEventListener("scroll", setScrollStatus);
+    }
+
+    setOnTopStatus(router === "/");
+
+    return () => {
+      window.removeEventListener("scroll", setScrollStatus);
+    };
+  }, [router]);
+
   return (
-    <div className={router === "/" ? styles.navbarMainSection : styles.navbar}>
+    <div
+      ref={headerRef}
+      className={[styles.navbar, isOnTop ? styles.navbar_isOnTop : ""].join(
+        " ",
+      )}
+    >
       <div className="container">
         <div className={styles.navbarWrapper}>
           {router === "/" ? (

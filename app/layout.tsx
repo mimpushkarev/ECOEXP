@@ -12,7 +12,7 @@ const RootLayout: RootLayoutType = ({children}) => {
     <html lang="en">
       <body>
         <NavBar />
-        {children}
+        <div className="heightWrapper">{children}</div>
         <Footer />
       </body>
     </html>

@@ -22,7 +22,10 @@ const Footer = () => {
             </Link>
           </div>
           <Link href="https://t.me/maximmartyr" passHref legacyBehavior>
-            <a className={["LXSText", styles.footerLink].join(" ")}>
+            <a
+              className={["LXSText", styles.footerLink].join(" ")}
+              target="_blank"
+            >
               by martir
             </a>
           </Link>

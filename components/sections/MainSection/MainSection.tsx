@@ -8,7 +8,7 @@ const MainSection = () => {
       <div className={styles.image}>
         <div>
           <div className={styles.title}>
-            <h1 className="H1">Экоэкспертиза</h1>
+            <h1 className="H1">EcoPragmat</h1>
             <div className={styles.paragraph}>
               <p className="XLText">By Konstantin Byrdukov</p>
             </div>

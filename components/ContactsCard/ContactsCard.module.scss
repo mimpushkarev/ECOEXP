@@ -4,6 +4,13 @@
   display: flex;
   height: 20.5rem;
   color: $color-white;
+
+  &:not(:hover) .contactItem_active {
+    min-width: 50%;
+    & > * {
+      padding-left: 6.25rem;
+    }
+  }
 }
 
 .paragraph {
@@ -16,6 +23,11 @@
   align-items: center;
   min-width: 20%;
   flex: 1;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  color: $color-white;
+
   &:nth-child(1) {
     background-color: $color-basic-3;
   }
@@ -25,12 +37,16 @@
   &:nth-child(3) {
     background-color: $color-basic-1;
   }
-  & > div {
+
+  & > * {
     padding-left: 1.25rem;
+    transition: 0.4s;
   }
-  &_active {
+
+  &:hover {
     min-width: 50%;
-    & > div {
+
+    & > * {
       padding-left: 6.25rem;
     }
   }
