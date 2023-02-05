@@ -1,5 +1,5 @@
 const TariffsHead = () => {
-  return <title>Тарифы</title>;
+  return <title>EcoPragmat | Тарифы</title>;
 };
 
 export default TariffsHead;

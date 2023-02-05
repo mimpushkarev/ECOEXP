@@ -1,5 +1,5 @@
 const ContactsHead = () => {
-  return <title>Контакты</title>;
+  return <title>EcoPragmat | Контакты</title>;
 };
 
 export default ContactsHead;

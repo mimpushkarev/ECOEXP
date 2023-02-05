@@ -1,5 +1,5 @@
 const AboutUsHead = () => {
-  return <title>О нас</title>;
+  return <title>EcoPragmat | О нас</title>;
 };
 
 export default AboutUsHead;

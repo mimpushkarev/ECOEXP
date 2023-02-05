@@ -1,32 +1,43 @@
 import {memo} from "react";
 
 import styles from "./ContactsCard.module.scss";
+import {ContactsCardType} from "./types";
 
-const ContactsCard = () => {
+const ContactsCard: ContactsCardType = ({contacts}) => {
   return (
     <div className={styles.contactgroup}>
-      <a
-        className={[styles.contactItem, styles.contactItem_active].join(" ")}
-        href="/"
-        target="_blank"
-      >
-        <div className="XLH1">
-          <p>01</p>
-          <p>Telegram</p>
-        </div>
-      </a>
-      <a href="/" className={styles.contactItem} target="_blank">
-        <div className="XLH1">
-          <p>02</p>
-          <p>Vk</p>
-        </div>
-      </a>
-      <div className={styles.contactItem}>
-        <div className="XLH1">
-          <p>03</p>
-          <p>Mail</p>
-        </div>
-      </div>
+      {contacts.map((contact, index) => {
+        if (contact.isCopy) {
+          return (
+            <div className={styles.contactItem} key={contact.value}>
+              <div className="XLH1">
+                <p>0{index}</p>
+                <p>{contact.title}</p>
+              </div>
+            </div>
+          );
+        }
+
+        const classes = [styles.contactItem];
+        if (index === 0) {
+          classes.push(styles.contactItem_active);
+        }
+
+        return (
+          <a
+            className={classes.join(" ")}
+            href={contact.value}
+            key={contact.value}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="XLH1">
+              <p>0{index}</p>
+              <p>{contact.title}</p>
+            </div>
+          </a>
+        );
+      })}
     </div>
   );
 };

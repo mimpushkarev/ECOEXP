@@ -1,9 +1,8 @@
 import {memo} from "react";
 
-import NavBar from "@components/NavBar";
-import Footer from "@components/Footer/Footer";
-
 import "@assets/styles/globalLayout.scss";
+import NavBar from "@components/NavBar";
+import Footer from "@components/Footer";
 
 import {RootLayoutType} from "./types";
 

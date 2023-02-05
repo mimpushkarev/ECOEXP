@@ -1,10 +1,10 @@
 import {memo} from "react";
 
-import styles from "./TariffsTable.module.scss";
+import styles from "./TariffsSection.module.scss";
 
-const TariffsTable = () => {
+const TariffsSection = () => {
   return (
-    <section className="section">
+    <section className="section" id="tariffs">
       <div className="container">
         <div className={["H4", styles.table].join(" ")}>
           <table width="100%" cellPadding={0} cellSpacing={0}>
@@ -202,4 +202,4 @@ const TariffsTable = () => {
   );
 };
 
-export default memo(TariffsTable);
+export default memo(TariffsSection);

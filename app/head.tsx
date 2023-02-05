@@ -1,5 +1,5 @@
 const MainHead = () => {
-  return <title>Главная</title>;
+  return <title>EcoPragmat | Главная</title>;
 };
 
 export default MainHead;

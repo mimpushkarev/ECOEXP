@@ -1,6 +1,7 @@
 import {memo} from "react";
 
-import TariffsTable from "@components/TariffsTable";
+import TariffsTable from "@components/sections/TariffsSection";
+
 import {TariffsPageType} from "./types";
 
 const TariffsPage: TariffsPageType = () => {
