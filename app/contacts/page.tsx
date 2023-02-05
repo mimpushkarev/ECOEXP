@@ -1,6 +1,6 @@
 import {memo} from "react";
 
-import ContactSection from "@components/sections/ContactSection/ContactSection";
+import ContactSection from "@components/sections/ContactSection";
 
 import {ContactsPageType} from "./types";
 

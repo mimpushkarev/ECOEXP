@@ -1,6 +1,5 @@
 "use client";
 import {memo, useEffect, useRef, useState} from "react";
-import Link from "next/link";
 import {usePathname} from "next/navigation";
 
 import styles from "./NavBar.module.scss";
@@ -8,7 +7,7 @@ import styles from "./NavBar.module.scss";
 const NavBar = () => {
   const router = usePathname();
 
-  const [isOnTop, setOnTopStatus] = useState(router === "/");
+  const [isOnTop, setOnTopStatus] = useState(window.pageYOffset < 200);
   const headerRef = useRef();
 
   useEffect(() => {
@@ -27,52 +26,38 @@ const NavBar = () => {
   }, [router]);
 
   return (
-    <div
+    <header
       ref={headerRef}
-      className={[styles.navbar, isOnTop ? styles.navbar_isOnTop : ""].join(
-        " ",
-      )}
+      className={[
+        styles.navbar,
+        isOnTop ? styles.navbar_isOnTop : "",
+        router === "/" ? styles.mainPage : "",
+      ].join(" ")}
     >
       <div className="container">
-        <div className={styles.navbarWrapper}>
+        <nav className={styles.navbarWrapper}>
           {router === "/" ? (
             <div className={styles.link} />
           ) : (
-            <Link href="/" passHref legacyBehavior>
-              <a className={["H4", styles.link].join(" ")}>Главная</a>
-            </Link>
+            <a href="/#" className={["H4", styles.link].join(" ")}>
+              Главная
+            </a>
           )}
           <div className={styles.nav}>
-            <Link href="/about-us" passHref legacyBehavior>
-              <a className={["H4", styles.link].join(" ")}>О нас</a>
-            </Link>
-            <Link href="/tariffs" passHref legacyBehavior>
-              <a className={["H4", styles.link].join(" ")}>Тарифы</a>
-            </Link>
-            <Link href="/contacts" passHref legacyBehavior>
-              <a className={["H4", styles.link].join(" ")}>Контакты</a>
-            </Link>
+            <a href="/#about-us" className={["H4", styles.link].join(" ")}>
+              О нас
+            </a>
+            <a href="/#tariffs" className={["H4", styles.link].join(" ")}>
+              Тарифы
+            </a>
+            <a href="/#contacts" className={["H4", styles.link].join(" ")}>
+              Контакты
+            </a>
           </div>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
 export default memo(NavBar);
-
-// const navigation = [
-//   {id: 1, title: "Главная", path: "/"},
-//   {id: 2, title: "О нас", path: "/about-us"},
-//   {id: 3, title: "Тарифы", path: "/tariffs"},
-//   {id: 4, title: "Контакты", path: "/contacts"},
-// ];
-{
-  /* <div>
-  {navigation.map(({id, title, path}) => (
-    <Link key={id} href={path} passHref legacyBehavior>
-      <a className={["H4", styles.link].join(" ")}>{title}</a>
-    </Link>
-  ))}
-</div> */
-}

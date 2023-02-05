@@ -1,5 +1,4 @@
 import {memo} from "react";
-import Link from "next/link";
 
 import styles from "./Footer.module.scss";
 
@@ -9,26 +8,33 @@ const Footer = () => {
       <div className="container">
         <div className={styles.footerWrapper}>
           <div className={styles.nav}>
-            <Link href="/contacts" passHref legacyBehavior>
-              <a className={["LXSText", styles.footerLink].join(" ")}>
-                Контакты
-              </a>
-            </Link>
-            <Link href="/about-us" passHref legacyBehavior>
-              <a className={["LXSText", styles.footerLink].join(" ")}>О нас</a>
-            </Link>
-            <Link href="/tariffs" passHref legacyBehavior>
-              <a className={["LXSText", styles.footerLink].join(" ")}>Тарифы</a>
-            </Link>
-          </div>
-          <Link href="https://t.me/maximmartyr" passHref legacyBehavior>
             <a
+              href="/#contacts"
               className={["LXSText", styles.footerLink].join(" ")}
-              target="_blank"
             >
-              by martir
+              Контакты
             </a>
-          </Link>
+            <a
+              href="/#about-us"
+              className={["LXSText", styles.footerLink].join(" ")}
+            >
+              О нас
+            </a>
+            <a
+              href="/#tariffs"
+              className={["LXSText", styles.footerLink].join(" ")}
+            >
+              Тарифы
+            </a>
+          </div>
+          <a
+            href="https://t.me/maximmartyr"
+            className={["LXSText", styles.footerLink].join(" ")}
+            target="_blank"
+            rel="noreferrer"
+          >
+            by martir
+          </a>
         </div>
       </div>
     </div>
