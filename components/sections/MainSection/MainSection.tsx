@@ -5,9 +5,8 @@ import styles from "./MainSection.module.scss";
 const MAIN_TEXTS = {
   title: "EcoPragmat",
   description: {
-    title: "Экологическая экспертиза",
-    subtitle: `Проведение на предприятиях и \n
-    заводах любой площади`,
+    title: "Экологическое проектирование и консалтинг",
+    subtitle: `Для объектов любой сложности`,
   },
 };
 
@@ -18,9 +17,6 @@ const MainSection = () => {
         <div>
           <div className={styles.title}>
             <h1 className="H1">{MAIN_TEXTS.title}</h1>
-            <div className={styles.paragraph}>
-              <p className="XLText">By Konstantin Byrdukov</p>
-            </div>
           </div>
           <div>
             <p className="H4">{MAIN_TEXTS.description.title}</p>

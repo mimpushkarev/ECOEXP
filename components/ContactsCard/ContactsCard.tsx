@@ -7,20 +7,20 @@ const ContactsCard: ContactsCardType = ({contacts}) => {
   return (
     <div className={styles.contactgroup}>
       {contacts.map((contact, index) => {
-        if (contact.isCopy) {
-          return (
-            <div className={styles.contactItem} key={contact.value}>
-              <div className="XLH1">
-                <p>0{index}</p>
-                <p>{contact.title}</p>
-              </div>
-            </div>
-          );
-        }
-
         const classes = [styles.contactItem];
         if (index === 0) {
           classes.push(styles.contactItem_active);
+        }
+
+        if (contact.isCopy) {
+          return (
+            <div className={classes.join(" ")} key={contact.value}>
+              <div className="XLH1">
+                <p>{contact.title}</p>
+                <p>{contact.value}</p>
+              </div>
+            </div>
+          );
         }
 
         return (
@@ -32,8 +32,8 @@ const ContactsCard: ContactsCardType = ({contacts}) => {
             rel="noreferrer"
           >
             <div className="XLH1">
-              <p>0{index}</p>
               <p>{contact.title}</p>
+              <p>{contact.value}</p>
             </div>
           </a>
         );

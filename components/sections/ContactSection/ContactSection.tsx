@@ -5,22 +5,24 @@ import ContactsCard from "@components/ContactsCard";
 import styles from "./ContactSection.module.scss";
 
 const CONTACT_TEXTS = {
-  title: "Вы всегда можете со мной связаться.",
+  title: "Вы всегда можете связаться с нами.",
   description: "Сделайте это в удобном для вас варианте из предложенных.",
 };
 
 const CONTACTS = [
   {
-    title: "Telegram",
-    value: "/",
+    title: "Телефон",
+    value: "8(965)514-82-20",
+    isCopy: true,
   },
   {
-    title: "VK",
-    value: "https://vk.com/id104895605",
+    title: "Телефон",
+    value: "8(912)035-72-23",
+    isCopy: true,
   },
   {
     title: "Mail",
-    value: "test@test.ru",
+    value: "ecopragmat@yandex.ru",
     isCopy: true,
   },
 ];
