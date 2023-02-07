@@ -7,7 +7,7 @@ import styles from "./NavBar.module.scss";
 const NavBar = () => {
   const router = usePathname();
 
-  const [isOnTop, setOnTopStatus] = useState(window.pageYOffset < 200);
+  const [isOnTop, setOnTopStatus] = useState(typeof window !== "undefined" ? window.pageYOffset < 200 : true);
   const headerRef = useRef();
 
   useEffect(() => {
